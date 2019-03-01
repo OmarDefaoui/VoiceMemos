@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mémos vocaux</string>
+
+    <!-- SettingsActivity -->
+    <string name="title_activity_settings">Réglages</string>
+    <string name="pref_ringtone_silent">Silencieux</string>
+    <string name="pref_storage_path">Chemin de stockage</string>
+    <string name="pref_rate">Rate</string>
+    <string name="pref_encoding">Encodage</string>
+    <string name="pref_pause_when_calls">Se mettre en pause pendant les appels</string>
+    <string name="pref_silence_mode">Mode silencieux</string>
+    <string name="pref_app_theme">Thème de l\'application</string>
+    <string name="pref_summary_pause_when_calls">Mettre l\'enregistrement en pause quand vous répondez à un appel, et continuer en raccrochage</string>
+    <string name="pref_summary_silence_mode">Mettre le téléphone en mode silencieux pendant l\'enregistrement</string>
+    <string name="reload_app">Veuillez redémarrer l\'application pour prendre en compte les modifications.</string>
+
+    <!-- Recording -->
+    <string name="no_result">Aucun résultat</string>
+    <string name="share_app">Partager</string>
+    <string name="share_with">Partager via:</string>
+    <string name="share_sub_text">Une application indispensable d\'enregistrement audio</string>
+    <string name="share_body">Essayez cette application cool et professionnelle:</string>
+    <string name="menu_welcome_page">Page d\'acceuil</string>
+
+    <!-- OnBoardingScreenActivity -->
+    <string name="permission_denied">Permission refusée</string>
+    <string name="permission_accepted">Permission acceptée</string>
+
+    <!-- OnBoardingScreenActivity -->
+    <string name="accept_permission">Accepter</string>
+    <string name="accepted_permission">Acceptée</string>
+
+    <!-- OnBoardingScreenActivity -->
+    <string name="file_saved">Fichier enregistré</string>
+    <string name="audio_record_error">Erreur AudioRecord:</string>
+
+    <!-- OnBoardingScreen -->
+    <string name="obs_title1">Bienvenue</string>
+    <string name="obs_title2">Autorisations</string>
+    <string name="obs_title3">Etat du téléphone</string>
+    <string name="obs_title4">Amuse toi bien !</string>
+    <string name="obs_description1">Avec cette application, enregistrez ce que vous voulez dans n\'importe quel endroit, en haute qualité, sans avoir besoin d\'internet.</string>
+    <string name="obs_description2">Vous devez accepter l\'autorisation d\'accès au stockage, pour que l\'application puisse enregistrer et lire vos enregistrements.\nNous avons également besoin d\'une autorisation téléphonique pour pouvoir suspendre l\'enregistrement si vous recevez un appel.</string>
+    <string name="obs_description3">Pour mettre votre téléphone en mode silencieux pendant l\'enregistrement, vous devez accepter cette autorisation.\n(Uniquement pour android Marshmallow ou versions ultérieures)</string>
+    <string name="obs_description4">Êtes-vous prêt?\nCommençons tout de suite !</string>
+    <string name="obs_btn_next">Suivant</string>
+    <string name="obs_btn_previous">Précédant</string>
+    <string name="obs_btn_finish">Terminer</string>
+    <string name="obs_btn_accept_permission">Accepter</string>
+
+    <string-array name="sample_rate_text">
+        <item>48 kHz</item>
+        <item>44.1 kHz (CD)</item>
+        <item>32 kHz</item>
+        <item>22 kHz</item>
+        <item>16 kHz (par défaut)</item>
+        <item>11 kHz</item>
+        <item>8 kHz (téléphone)</item>
+    </string-array>
+
+    <string-array name="encodings_text">
+        <item>.wav (par défaut)</item>
+        <item>.m4a</item>
+    </string-array>
+
+    <string-array name="themes_text">
+        <item>Thème blanc (par défaut)</item>
+        <item>Thème sombre</item>
+    </string-array>
+
+    <string name="recording_notification_name">Enregistrement</string>
+    <string name="recording_notification_description">Vous voyez cette notification lorsque vous commencez l\'enregistrement, cette notification est très importante pour que l\'enregistrement continue de fonctionner en arrière-plan</string>
+    <string name="recording_notification_id">enregistrement</string>
+
+    <string name="not_permitted">Non permis</string>
+    <string name="shared_via">"Partagé via %1$s"</string>
+    <string name="rename_recording">Renommer l\'enregistrement</string>
+    <string name="file_not_found">Fichier non trouvé</string>
+    <string name="no">Non</string>
+    <string name="yes">Oui</string>
+    <string name="are_you_sure">"Êtes-vous sûr ? "</string>
+    <string name="delete_recording">Supprimer l\'enregistrement</string>
+    <string name="hold_by_call">pause (appel)</string>
+    <string name="encoding">encodage</string>
+    <string name="pause">pause</string>
+    <string name="edit">modifier</string>
+    <string name="confirm_cancel">Confirmer l\'annulation</string>
+    <string name="are_you_sure_cancel">Es-tu sûre de vouloir annuler?</string>
+    <string name="recording">enregistrement</string>
+    <string name="encoding_title">Encodage...</string>
+    <string name="recording_title">Enregistrement</string>
+    <string name="db">dB</string>
+    <string name="days_symbol">"j"</string>
+    <string name="title_header">%1$s dispo ~ %2$s encore</string>
+    <string name="size_gb">%1$.1f GB</string>
+    <string name="size_mb">%1$.1f MB</string>
+    <string name="size_kb">%1$.1f kb</string>
+    <string name="rename">Renommer</string>
+    <string name="delete">Supprimer</string>
+
+    <plurals name="days">
+        <item quantity="one">%d jour</item>
+        <item quantity="other">%d jours</item>
+    </plurals>
+
+    <plurals name="hours">
+        <item quantity="one">%d heure</item>
+        <item quantity="other">%d heures</item>
+    </plurals>
+
+    <plurals name="minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+
+    <plurals name="seconds">
+        <item quantity="one">%d second</item>
+        <item quantity="other">%d seconds</item>
+    </plurals>
+
+    <string name="date_format">dd-MM-yyyy</string>
+</resources>

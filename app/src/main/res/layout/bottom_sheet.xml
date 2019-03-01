@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="340dp"
+    android:background="@drawable/ui_bottom_sheet_corner"
+    android:clickable="true"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="80dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_details"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_recording_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Name"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/tv_recording_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_recording_title"
+                android:layout_centerHorizontal="true"
+                android:text="00:45"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tv_recording_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_recording_time"
+                android:layout_centerHorizontal="true"
+                android:text="Pending"
+                android:textColor="@android:color/darker_gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_circle_empty" />
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_circle_red" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_recording_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:id="@+id/rl_edit_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_edit_done"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                app:srcCompat="@drawable/ic_cancel_cut"
+                android:tint="@color/color_yellow" />
+
+            <ImageView
+                android:id="@+id/iv_play_preview"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                app:srcCompat="@drawable/ic_play"
+                android:tint="@color/color_yellow" />
+
+            <ImageView
+                android:id="@+id/iv_cut"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/ic_cut"
+                android:tint="@color/color_yellow" />
+        </RelativeLayout>
+
+        <com.nordef.voicememos.ui.PitchView
+            android:id="@+id/recording_pitch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl_pause_resume"
+            android:layout_below="@+id/rl_edit_box"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="17dp"
+            android:layout_toLeftOf="@+id/rl_pause_resume">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_cancel"
+                android:tint="@color/color_orange" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_pause_resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_circle_empty" />
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_pause" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/rl_pause_resume">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_circle_empty" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_stop" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

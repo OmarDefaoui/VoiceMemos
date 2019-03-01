@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "253464181144",
+    "firebase_url": "https://voice-memos-a905a.firebaseio.com",
+    "project_id": "voice-memos-a905a",
+    "storage_bucket": "voice-memos-a905a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253464181144:android:5b18b18f3a2fa442",
+        "android_client_info": {
+          "package_name": "com.nordef.voicememos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "253464181144-6f27qeqreq8o2l1brc2ju2ae6vpqa2uq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB64ipILn7AyPC_z23cJhZivFCNgCf_Kqk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

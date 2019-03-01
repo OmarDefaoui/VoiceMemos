@@ -1,0 +1,50 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.nordef.voicememos.ui.StoragePathPreference
+        android:defaultValue="@string/save_records_folder_name"
+        android:key="storage_path"
+        android:summary="/sdcard/some/"
+        android:title="@string/pref_storage_path" />
+
+    <ListPreference
+        android:defaultValue="16000"
+        android:entries="@array/sample_rate_text"
+        android:entryValues="@array/sample_rate_values"
+        android:key="sample_rate"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="44100"
+        android:title="@string/pref_rate" />
+
+    <ListPreference
+        android:defaultValue="wav"
+        android:entries="@array/encodings_text"
+        android:entryValues="@array/encodings_values"
+        android:key="encoding"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="Output file formats (.wav, .m4a, ...)"
+        android:title="@string/pref_encoding" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="call"
+        android:summary="@string/pref_summary_pause_when_calls"
+        android:title="@string/pref_pause_when_calls" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="silence"
+        android:summary="@string/pref_summary_silence_mode"
+        android:title="@string/pref_silence_mode" />
+
+    <ListPreference
+        android:defaultValue="Theme_White"
+        android:entries="@array/themes_text"
+        android:entryValues="@array/themes_values"
+        android:key="theme"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="Set application theme (dark / light)"
+        android:title="@string/pref_app_theme" />
+
+</PreferenceScreen>
